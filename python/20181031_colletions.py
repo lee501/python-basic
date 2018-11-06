@@ -24,5 +24,29 @@ print(dfdict)
 #     'Ali': ['Blue', 'Black']
 # })
 
+# Counter
+# 计数器
+from collections import Counter
+
+colours = (
+    ('Yasoob', 'Yellow'),
+    ('Ali', 'Blue'),
+    ('Arham', 'Green'),
+    ('Ali', 'Black'),
+    ('Yasoob', 'Red'),
+    ('Ahmed', 'Silver'),
+)
+
+favs = Counter(name for name, colour in colours)
+
+favs #=> Counter({'Yasoob': 2, 'Ali': 2, 'Arham': 1, 'Ahmed': 1})
+
+
+# deque 提供一个双端队列
+from collections import deque
+
+d = deque()
+d.append(1)
+
 
 
